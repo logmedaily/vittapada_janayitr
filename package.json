@@ -1,0 +1,48 @@
+{
+  "name": "@logmedaily/vittapada_janayitr",
+  "version": "0.0.1",
+  "description": "vittapada janayitr is experimental bip39 wallet phrase generator for rapid testing and prototyping, It is advised the code is reviewed and used at your own descretion & was built by author for some custom rapid experimentation. ",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.16.0",
+    "npm": ">=9.5.1"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "clean": "rimraf dist",
+    "build": "webpack --mode production",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/logmedaily/vittapada_janayitr"
+  },
+  "keywords": [
+    "mnemonic",
+    "bip39",
+    "vittapa",
+    "janayitr"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "buffer": "^6.0.3",
+    "compression-webpack-plugin": "^10.0.0",
+    "crypto-browserify": "^3.12.0",
+    "fs": "^0.0.1-security",
+    "jest": "^29.6.2",
+    "os-browserify": "^0.3.0",
+    "rimraf": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-license-plugin": "^4.2.2"
+  },
+  "author": "logmedaily",
+  "license": "MIT"
+}
